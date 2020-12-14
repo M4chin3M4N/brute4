@@ -5,14 +5,14 @@ import itertools
 
 def check(inputdata):
 
-    reg = re.fullmatch(r"[1-9a-f]{32}",inputdata)
+    reg = re.fullmatch(r"[0-9a-f]{32}",inputdata)
 
     if reg != None:
         hash_type = "md5"
 
         return hash_type
 
-    reg = re.fullmatch(r"[1-9a-f]{40}",inputdata)
+    reg = re.fullmatch(r"[0-9a-f]{40}",inputdata)
 
     if reg != None:
         
@@ -20,7 +20,7 @@ def check(inputdata):
 
         return hash_type
     
-    reg = re.fullmatch(r"[1-9a-f]{56}",inputdata)
+    reg = re.fullmatch(r"[0-9a-f]{56}",inputdata)
 
     if reg != None:
         
@@ -28,7 +28,7 @@ def check(inputdata):
 
         return hash_type
 
-    reg = re.fullmatch(r"[1-9a-f]{64}",inputdata)
+    reg = re.fullmatch(r"[0-9a-f]{64}",inputdata)
 
     if reg != None:
         
@@ -36,7 +36,7 @@ def check(inputdata):
     
         return hash_type
 
-    reg = re.fullmatch(r"[1-9a-f]{128}",inputdata)
+    reg = re.fullmatch(r"[0-9a-f]{128}",inputdata)
 
     if reg != None:
 
